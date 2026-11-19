@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090d16">
+<meta name="description" content="NOKHBA CINEMA AI — استوديو توليد الفيديو">
+<title>استوديو الفيديو | NOKHBA CINEMA AI</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="video.css">
+</head>
+<body>
+<header class="top">
+<a class="brand" href="./"><span class="mark">N</span><span>NOKHBA <b>CINEMA AI</b><small>استوديو الإبداع الذكي</small></span></a>
+<a class="top-tag" href="./">العودة للرئيسية ←</a>
+</header>
+<main class="video-main">
+<section class="video-heading">
+<span class="eyebrow">LTX-2.3 FAST · TEXT TO VIDEO</span>
+<h1>حوّل كلماتك إلى <em>مشهد سينمائي</em></h1>
+<p>اكتب وصف المشهد، اختر الإعدادات، ثم أنشئ الفيديو. ابدأ بدقة 720p لتقليل التكلفة.</p>
+</section>
+<section class="studio-panel" aria-labelledby="studio-title">
+<h2 id="studio-title">إعداد الفيديو</h2>
+<label for="accessCode">رمز الوصول الخاص</label>
+<input id="accessCode" type="password" autocomplete="off" placeholder="أدخل رمز الوصول الذي تضبطه في Cloudflare">
+<small class="field-help">لا تضع أي مفتاح API هنا. هذا الرمز فقط لحماية واجهة التجربة.</small>
+<label for="prompt">وصف المشهد</label>
+<textarea id="prompt" rows="5" maxlength="1500" placeholder="مثال: قارب ورقي صغير يطفو ببطء فوق بركة هادئة وقت الشروق، انعكاس ذهبي على الماء، حركة كاميرا سينمائية ناعمة..."></textarea>
+<div class="settings-grid">
+<div><label for="duration">المدة</label><select id="duration"><option value="6">6 ثوانٍ</option></select></div>
+<div><label for="resolution">الدقة والاتجاه</label><select id="resolution"><option value="1280x720">720p أفقي — اقتصادي</option><option value="720x1280">720p عمودي — Reels/TikTok</option><option value="1920x1080">1080p أفقي</option><option value="1080x1920">1080p عمودي</option></select></div>
+<div><label for="audio">الصوت</label><select id="audio"><option value="true">توليد صوت</option><option value="false">بدون صوت</option></select></div>
+</div>
+<p class="cost-note" id="costNote">التكلفة التقديرية: 0.18 دولار للفيديو (6 ثوانٍ بدقة 720p). قد تتغير حسب تسعير Cloudflare.</p>
+<button id="generateBtn" class="action primary generate-btn" type="button">إنشاء الفيديو الآن</button>
+<p id="status" class="status" role="status" aria-live="polite">أدخل رمز الوصول ووصف المشهد لبدء التجربة.</p>
+</section>
+<section id="resultPanel" class="result-panel" hidden>
+<h2>نتيجة التوليد</h2>
+<video id="resultVideo" controls playsinline></video>
+<a id="downloadLink" class="action secondary" href="#" download="nokhba-cinema-video.mp4">تنزيل الفيديو</a>
+<p class="field-help">قد يكون رابط النتيجة مؤقتًا من مزوّد الخدمة؛ نزّل الفيديو للاحتفاظ به.</p>
+</section>
+</main>
+<footer><span>© NOKHBA CINEMA AI</span><span>الثقة • الإبداع • الجودة</span></footer>
+<script src="video.js" defer></script>
+</body>
+</html>
