@@ -1,25 +1,80 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#090d16"><meta name="description" content="NOKHBA CINEMA AI — استوديو الإبداع بالذكاء الاصطناعي">
-<title>NOKHBA CINEMA AI | نخبة سينما</title><link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="NOKHBA CINEMA — معرض سينمائي أنيق لنجوم السينما العالمية">
+<title>NOKHBA CINEMA | نخبة سينما</title>
+<link rel="preconnect" href="https://commons.wikimedia.org">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top"><a class="brand" href="./"><span class="mark">N</span><span>NOKHBA <b>CINEMA AI</b><small>استوديو الإبداع الذكي</small></span></a><span class="top-tag">حيث يبدأ الخيال</span></header>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="NOKHBA CINEMA"><span class="brand-mark">N</span><span><strong>NOKHBA</strong><small>CINEMA</small></span></a>
+  <nav class="nav"><a href="#stars">معرض النجوم</a><a href="#about">عن نخبة سينما</a></nav>
+  <span class="edition">THE CINEMA EDITION <i>2026</i></span>
+</header>
 <main>
 <section class="hero">
-<div class="hero-art" role="img" aria-label="خلفية سينمائية تجريدية"></div>
-<div class="hero-copy"><span class="eyebrow">استوديو صناعة المحتوى بالذكاء الاصطناعي</span><h1>خيالك... <em>على الشاشة</em></h1><p>حوّل أفكارك إلى صور ومشاهد وأفلام. ابدأ بفكرتك، ودع الإبداع يأخذك إلى أبعد مدى.</p>
-<div class="actions"><a class="action primary" href="#create">ابدأ الإبداع <span>←</span></a><a class="action secondary" href="#services">اكتشف الخدمات</a></div></div>
-<div class="hero-stamp">CREATE<br><b>YOUR</b><br>WORLD</div>
+  <img class="hero-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Catherine_Deneuve,_actress.jpg" alt="الممثلة الفرنسية كاترين دونوف في صورة فوتوغرافية أرشيفية" fetchpriority="high">
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <span class="kicker">THE ART OF CINEMA · EUROPEAN MOOD</span>
+    <p class="overline">حكايات تُروى بالضوء والعدسة</p>
+    <h1>وجوهٌ صنعت<br><em>سحر السينما</em></h1>
+    <p class="hero-desc">رحلة بصرية بين نجوم الشاشة، وأناقة الصورة الأوروبية، ولحظات خالدة أمام الكاميرا.</p>
+    <a class="gold-button" href="#stars">اكتشف معرض النجوم <span>←</span></a>
+  </div>
+  <div class="hero-caption"><span>01 / PORTRAIT ARCHIVE</span><span>PARIS · CINEMA · TIMELESS</span></div>
 </section>
-<section id="services" class="services"><div class="section-head"><span>مساحة إبداعك</span><h2>ماذا تريد أن تصنع اليوم؟</h2><p>اختر بوابتك الإبداعية — وسنطوّر كل خدمة لتصبح جاهزة للإنتاج.</p></div>
-<div id="create" class="cards">
-<button class="service" data-service="image"><span class="num">01 / IMAGE</span><span class="symbol">✧</span><h3>أنشئ صورة</h3><p>حوّل وصفك إلى صورة فنية مميزة.</p><span class="go">ابدأ الآن ←</span></button>
-<button class="service" data-service="video"><span class="num">02 / VIDEO</span><span class="symbol">▶</span><h3>أنشئ فيديو</h3><p>اصنع مشاهد متحركة من فكرتك.</p><span class="go">ابدأ الآن ←</span></button>
-<button class="service featured" data-service="film"><span class="ribbon">تجربة VIP</span><span class="num">03 / FEATURE FILM</span><span class="symbol">▣</span><h3>أنشئ فيلمًا طويلًا</h3><p>من الفكرة والسيناريو إلى المشاهد وتجميع الفيلم — خدمة إنتاج متكاملة قيد التطوير.</p><span class="go">استكشف إنتاج الأفلام ←</span></button>
-</div><p class="notice" id="notice" aria-live="polite">الخدمات المعروضة واجهة أولية؛ سيتم تفعيل التوليد بعد ربط مزوّد الخدمة والتحقق من التكلفة.</p>
+
+<section class="intro" id="about">
+  <div><span class="section-kicker">A WORLD OF CINEMA</span><h2>أكثر من صورة...<br><em>إنها حكاية نجم</em></h2></div>
+  <p>نحتفي بوجوه تركت بصمتها في تاريخ الفن السابع؛ من كلاسيكيات أوروبا إلى نجوم الشاشة حول العالم. صور موثقة، وأسماء تستحق أن تبقى في الذاكرة.</p>
 </section>
-</main><footer><span>© NOKHBA CINEMA AI</span><span>الثقة • الإبداع • الجودة</span></footer><script src="app.js"></script>
+
+<section class="gallery-section" id="stars">
+  <div class="gallery-heading"><div><span class="section-kicker">THE STAR GALLERY</span><h2>أيقونات الشاشة</h2></div><span class="gallery-count">مختارات افتتاحية <b>05</b></span></div>
+  <div class="filters" role="group" aria-label="تصفية المعرض">
+    <button class="filter active" data-filter="all">الكل</button>
+    <button class="filter" data-filter="actress">نجمات</button>
+    <button class="filter" data-filter="actor">نجوم</button>
+    <button class="filter" data-filter="classic">كلاسيكيات</button>
+  </div>
+  <div class="gallery-grid">
+    <article class="star-card tall" data-kind="actress classic">
+      <button class="photo-button" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/AudreyKHepburn.jpg" data-name="أودري هيبورن" data-caption="أيقونة الأناقة والسينما الكلاسيكية">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/AudreyKHepburn.jpg" alt="أودري هيبورن في لقطة من فيلم عطلة رومانية" loading="lazy">
+        <span class="view-mark">عرض الصورة ↗</span>
+      </button><div class="card-meta"><span>BRITISH · CLASSIC ICON</span><h3>أودري هيبورن</h3><p>أيقونة الأناقة والسينما الكلاسيكية</p></div>
+    </article>
+    <article class="star-card" data-kind="actress classic">
+      <button class="photo-button" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Sophia_Loren_-_1959.jpg" data-name="صوفيا لورين" data-caption="سحر السينما الإيطالية">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sophia_Loren_-_1959.jpg" alt="صوفيا لورين في صورة أرشيفية عام 1959" loading="lazy"><span class="view-mark">عرض الصورة ↗</span>
+      </button><div class="card-meta"><span>ITALIAN · GOLDEN AGE</span><h3>صوفيا لورين</h3><p>سحر السينما الإيطالية</p></div>
+    </article>
+    <article class="star-card" data-kind="actor classic">
+      <button class="photo-button" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Alain_Delon.jpg" data-name="آلان ديلون" data-caption="حضور فرنسي لا يُنسى">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Alain_Delon.jpg" alt="الممثل الفرنسي آلان ديلون" loading="lazy"><span class="view-mark">عرض الصورة ↗</span>
+      </button><div class="card-meta"><span>FRENCH · CINEMA ICON</span><h3>آلان ديلون</h3><p>حضور فرنسي لا يُنسى</p></div>
+    </article>
+    <article class="star-card" data-kind="actress">
+      <button class="photo-button" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Monica_Bellucci_in_2026.jpg" data-name="مونيكا بيلوتشي" data-caption="أناقة إيطالية معاصرة">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Monica_Bellucci_in_2026.jpg" alt="الممثلة الإيطالية مونيكا بيلوتشي في مهرجان لوكارنو 2026" loading="lazy"><span class="view-mark">عرض الصورة ↗</span>
+      </button><div class="card-meta"><span>ITALIAN · CONTEMPORARY</span><h3>مونيكا بيلوتشي</h3><p>أناقة إيطالية معاصرة</p></div>
+    </article>
+    <article class="star-card" data-kind="actress classic">
+      <button class="photo-button" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Catherine_Deneuve,_actress.jpg" data-name="كاترين دونوف" data-caption="رمز من رموز السينما الفرنسية">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Catherine_Deneuve,_actress.jpg" alt="الممثلة الفرنسية كاترين دونوف" loading="lazy"><span class="view-mark">عرض الصورة ↗</span>
+      </button><div class="card-meta"><span>FRENCH · PORTRAIT</span><h3>كاترين دونوف</h3><p>رمز من رموز السينما الفرنسية</p></div>
+    </article>
+  </div>
+  <p class="gallery-note">هذه مجموعة افتتاحية مختارة. نضيف النجوم تباعاً مع توثيق مصدر كل صورة وشروط استخدامها.</p>
+</section>
+<section class="closing"><span>THE MAGIC OF THE BIG SCREEN</span><h2>السينما... ذاكرةٌ لا تنطفئ</h2><p>من أوروبا إلى العالم، لكل وجه حكاية ولكل صورة لحظة تستحق التأمل.</p></section>
+</main>
+<footer><span>© 2026 NOKHBA CINEMA</span><span>الثقة · الفن · احترام حقوق الصورة</span><a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">مصادر الصور وتراخيصها</a></footer>
+<div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" aria-label="إغلاق">×</button><img src="" alt=""><div class="lightbox-caption"><strong></strong><span></span></div></div>
+<script src="app.js"></script>
 </body></html>
