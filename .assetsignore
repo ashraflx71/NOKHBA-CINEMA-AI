@@ -1,9 +1,10 @@
-# Publish only the actual website files from the repository root
-README.md
-UPLOAD-INSTRUCTIONS.txt
-docs/
-.git/
-.github/
-.wrangler/
-wrangler.jsonc
-.assetsignore
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "nokhba-cinema-ai",
+  "compatibility_date": "2026-11-21",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  }
+}
+src/
