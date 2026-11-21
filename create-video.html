@@ -90,6 +90,19 @@
 <script>
 const promptField = document.getElementById('videoPrompt');
 const count = document.getElementById('count');
+const naturePrompts = {
+  sunrise: 'لقطة سينمائية واقعية لشروق الشمس فوق البحر، أمواج ذهبية هادئة وانعكاس الضوء على سطح الماء، حركة كاميرا بطيئة من مستوى منخفض، ألوان طبيعية وتفاصيل واقعية، من دون كتابة أو شعارات.',
+  forest: 'مشهد سينمائي واقعي داخل غابة خضراء عند الصباح، أشعة الشمس تتسلل بين الأشجار مع ضباب خفيف وطيور بعيدة، حركة كاميرا انسيابية للأمام، ألوان طبيعية وتفاصيل دقيقة.',
+  waterfall: 'لقطة وثائقية سينمائية لشلال طبيعي قوي يتدفق بين الصخور والنباتات الخضراء، رذاذ الماء يلتقط ضوء الشمس، حركة كاميرا بطيئة وتفاصيل واقعية.',
+  wildlife: 'مشهد وثائقي واقعي للحياة البرية في موطنها الطبيعي، فيل يسير بهدوء وسط سهول خضراء، تصوير من مسافة آمنة واحترام سلوك الحيوان، حركة كاميرا ثابتة وإضاءة طبيعية.',
+  desert: 'مشهد سينمائي واسع لكثبان رملية ذهبية وقت الغروب، الرياح ترسم تموجات ناعمة على الرمال والظلال تمتد بهدوء، حركة كاميرا بطيئة وألوان واقعية.',
+  mountains: 'لقطة سينمائية واسعة لقمم جبلية شاهقة تلامس السحب، ضوء الصباح يكشف تفاصيل الصخور والوديان، حركة كاميرا جوية هادئة ومشهد طبيعي واقعي.'
+};
+const selectedScene = new URLSearchParams(window.location.search).get('scene');
+if (selectedScene && naturePrompts[selectedScene]) {
+  promptField.value = naturePrompts[selectedScene];
+  count.textContent = promptField.value.length;
+}
 promptField.addEventListener('input', () => { count.textContent = promptField.value.length; });
 document.querySelectorAll('.example').forEach(button => {
   button.addEventListener('click', () => {
