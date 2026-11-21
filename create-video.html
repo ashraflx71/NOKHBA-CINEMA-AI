@@ -90,6 +90,19 @@
 <script>
 const promptField = document.getElementById('videoPrompt');
 const count = document.getElementById('count');
+const scenePrompts = {
+  'future-city': 'مشهد سينمائي واسع لمدينة مستقبلية ليلًا، ناطحات سحاب زجاجية مضيئة ومركبات ذاتية الحركة تعبر بين الأبراج، انعكاسات ضوئية على الشوارع، حركة كاميرا انسيابية وتفاصيل واقعية عالية.',
+  'deep-space': 'لقطة سينمائية لمركبة استكشاف فضائي تعبر أعماق الكون، نجوم وسدم ملونة ومجرات بعيدة في الخلفية، إحساس بالاتساع والرهبة، حركة كاميرا بطيئة وإضاءة كونية واقعية.',
+  'alien-world': 'مشهد لكوكب خيالي بعيد بتضاريس صخرية غير مألوفة ونباتات مضيئة تحت سماء بنفسجية وسحب ضخمة، الكاميرا تكشف الأفق تدريجيًا، تصميم فني متقن وأجواء ملحمية.',
+  'orbital-station': 'محطة أبحاث فضائية مستقبلية تدور بهدوء حول كوكب أزرق، ألواح شمسية ضخمة وأضواء داخلية دافئة، لقطة خارجية واسعة مع حركة كاميرا بطيئة وتفاصيل علمية تخيلية مقنعة.',
+  'ai-companion': 'روبوت مساعد متطور بتصميم أنيق يتحرك داخل مختبر مستقبلي، شاشات شفافة وإضاءة هادئة وانعكاسات معدنية دقيقة، لقطة سينمائية واقعية تبرز التفاعل بين الإنسان والتقنية دون إظهار أشخاص.',
+  'time-portal': 'بوابة زمنية مضيئة تتشكل داخل قاعة مستقبلية، دوائر ضوئية متحركة تكشف عبرها لمحات من عصور ومدن مختلفة، انتقال بصري سلس وحركة كاميرا دائرية وأسلوب سينمائي خيالي.'
+};
+const selectedScene = new URLSearchParams(window.location.search).get('scene');
+if (selectedScene && scenePrompts[selectedScene]) {
+  promptField.value = scenePrompts[selectedScene];
+  count.textContent = promptField.value.length;
+}
 promptField.addEventListener('input', () => { count.textContent = promptField.value.length; });
 document.querySelectorAll('.example').forEach(button => {
   button.addEventListener('click', () => {
