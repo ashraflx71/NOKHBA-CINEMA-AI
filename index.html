@@ -3,84 +3,85 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#090909">
-<meta name="description" content="NOKHBA CINEMA — معرض سينمائي عالمي بهوية أوروبية فاخرة">
+<meta name="theme-color" content="#08090b">
+<meta name="description" content="نخبة سينما — وجهتك لاكتشاف عالم الأفلام والنجوم واختيار ما يستحق المشاهدة.">
 <title>NOKHBA CINEMA | نخبة سينما</title>
-<link rel="preconnect" href="https://commons.wikimedia.org">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
-  <a class="brand" href="#" aria-label="NOKHBA CINEMA"><img class="brand-symbol" src="film-strip-logo.svg" alt="" width="48" height="48"><span class="brand-wordmark"><span><strong>NOKHBA</strong><small>CINEMA</small></span></span></a>
-  <nav class="nav"><a href="#stars">معرض النجوم</a><a href="#about">عن نخبة سينما</a></nav>
-  <span class="edition">THE CINEMA EDITION <i>2026</i></span>
-</header>
-<main>
-<section class="brand-hero" aria-label="الواجهة السينمائية الرئيسية لنخبة سينما">
-  <img src="https://images.pexels.com/photos/36136492/pexels-photo-36136492.jpeg?auto=compress&cs=tinysrgb&w=2000" alt="كاميرا عرض سينمائي قديمة أمام ستارة حمراء — تصوير Mariia Stepanova" fetchpriority="high">
-</section>
-<section class="hero-actions" aria-label="استكشف نخبة سينما">
-  <div class="hero-copy">
-    <span class="section-kicker">THE MAGIC OF CINEMA</span>
-    <h1>حكاياتٌ <em>تُخلّدها الشاشة</em></h1>
-    <p>اكتشف وجوهًا صنعت تاريخ السينما، من روائع الزمن الجميل إلى نجوم الشاشة حول العالم.</p>
-  </div>
-  <nav class="hero-buttons" aria-label="روابط رئيسية">
-    <a class="hero-button primary" href="#stars">اكتشف معرض النجوم</a>
-    <a class="hero-button" href="#stars" data-show-classic>روائع السينما الكلاسيكية</a>
-    <a class="hero-button" href="#about">عن نخبة سينما</a>
+  <a class="brand" href="#home" aria-label="الصفحة الرئيسية لنخبة سينما">
+    <img src="film-strip-logo.svg" alt="" width="42" height="48">
+    <span><strong>NOKHBA</strong><small>CINEMA</small></span>
+  </a>
+  <nav class="nav" aria-label="القائمة الرئيسية">
+    <a href="#discover">اكتشف</a><a href="#moods">التصنيفات</a><a href="#about">عن المنصة</a>
   </nav>
-  <p class="hero-credit">الصورة: Mariia Stepanova · <a href="https://www.pexels.com/photo/vintage-film-projector-with-red-curtain-background-36136492/" target="_blank" rel="noopener noreferrer">المصدر والترخيص عبر Pexels</a></p>
-</section>
-<section class="intro" id="about">
-  <div><span class="section-kicker">A WORLD OF CINEMA</span><h2>من سحر الشاشة...<br><em>إلى حكايات النجوم</em></h2></div>
-  <p>مرحباً بكم في نخبة سينما؛ رحلة بصرية تحتفي بنجوم الفن السابع، وصورهم الأيقونية، وأناقة السينما الأوروبية والعالمية. نعرض الصور بمصادر واضحة واحترام لحقوق أصحابها.</p>
-</section>
-<section class="gallery-section" id="stars">
-  <div class="gallery-heading"><div><span class="section-kicker">THE STAR GALLERY</span><h2>نجوم السينما العالمية</h2></div><span class="gallery-count">مختارات افتتاحية <b>06</b></span></div>
-  <div class="filters" role="group" aria-label="تصفية المعرض">
-    <button class="filter active" data-filter="all">الكل</button>
-    <button class="filter" data-filter="actress">نجمات</button>
-    <button class="filter" data-filter="actor">نجوم</button>
-    <button class="filter" data-filter="classic">كلاسيكيات</button>
-  </div>
-  <div class="gallery-grid">
-    <article class="star-card tall" data-kind="actress classic">
-      <button class="photo-button" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/AudreyKHepburn.jpg" data-name="أودري هيبورن" data-caption="أيقونة الأناقة والسينما الكلاسيكية" data-credit="Bud Fraker" data-license="ملكية عامة في الولايات المتحدة وفق صفحة الملف؛ قد تختلف الحماية في بلدان أخرى." data-source="https://commons.wikimedia.org/wiki/File:AudreyKHepburn.jpg">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/AudreyKHepburn.jpg" alt="أودري هيبورن في لقطة سينمائية" loading="lazy"><span class="view-mark">عرض الصورة ↗</span>
-      </button><div class="card-meta"><span>BRITISH · CLASSIC ICON</span><h3>أودري هيبورن</h3><p>أيقونة الأناقة والسينما الكلاسيكية</p></div>
-    </article>
-    <article class="star-card" data-kind="actress classic">
-      <button class="photo-button" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Sophia_Loren_-_1959.jpg" data-name="صوفيا لورين" data-caption="سحر السينما الإيطالية" data-credit="Paul A. Hesse Studios" data-license="ملكية عامة في الولايات المتحدة وفق صفحة الملف؛ قد تختلف الحماية في بلدان أخرى." data-source="https://commons.wikimedia.org/wiki/File:Sophia_Loren_-_1959.jpg">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sophia_Loren_-_1959.jpg" alt="صوفيا لورين في صورة أرشيفية" loading="lazy"><span class="view-mark">عرض الصورة ↗</span>
-      </button><div class="card-meta"><span>ITALIAN · GOLDEN AGE</span><h3>صوفيا لورين</h3><p>سحر السينما الإيطالية</p></div>
-    </article>
-    <article class="star-card" data-kind="actor classic">
-      <button class="photo-button" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Alain_Delon.jpg" data-name="آلان ديلون" data-caption="حضور فرنسي لا يُنسى" data-credit="Ivan Bessedin" data-license="Creative Commons Attribution 2.0 (CC BY 2.0)؛ يجب ذكر المصور ورابط الترخيص." data-source="https://commons.wikimedia.org/wiki/File:Alain_Delon.jpg">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Alain_Delon.jpg" alt="الممثل الفرنسي آلان ديلون" loading="lazy"><span class="view-mark">عرض الصورة ↗</span>
-      </button><div class="card-meta"><span>FRENCH · CINEMA ICON</span><h3>آلان ديلون</h3><p>حضور فرنسي لا يُنسى</p></div>
-    </article>
-    <article class="star-card" data-kind="actor">
-      <button class="photo-button" data-full="https://raw.githubusercontent.com/ashraflx71/NOKHBA-CINEMA-AI/main/1795220101330%282%29-1.jpg" data-name="جيسون ستاثام" data-caption="لقطة أكشن سينمائية — صورة مقدمة من إدارة الموقع" data-credit="ملف صورة أرسله مدير الموقع" data-license="لم يتم التحقق من ترخيص إعادة النشر؛ يلزم إذن صاحب الحقوق قبل الاستخدام العام أو التجاري.">
-        <img src="https://raw.githubusercontent.com/ashraflx71/NOKHBA-CINEMA-AI/main/1795220101330%282%29-1.jpg" alt="جيسون ستاثام في لقطة أكشن" loading="lazy"><span class="view-mark">عرض الصورة ↗</span>
-      </button><div class="card-meta"><span>BRITISH · ACTION CINEMA</span><h3>جيسون ستاثام</h3><p>حضور قوي في أفلام الحركة والإثارة</p></div>
-    </article>
-    <article class="star-card" data-kind="actress">
-      <button class="photo-button" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Monica_Bellucci_in_2026.jpg" data-name="مونيكا بيلوتشي" data-caption="أناقة إيطالية معاصرة" data-credit="Marlene Landu" data-license="Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)؛ يلزم الإسناد والترخيص بالمثل عند الاقتضاء." data-source="https://commons.wikimedia.org/wiki/File:Monica_Bellucci_in_2026.jpg">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Monica_Bellucci_in_2026.jpg" alt="الممثلة الإيطالية مونيكا بيلوتشي" loading="lazy"><span class="view-mark">عرض الصورة ↗</span>
-      </button><div class="card-meta"><span>ITALIAN · CONTEMPORARY</span><h3>مونيكا بيلوتشي</h3><p>أناقة إيطالية معاصرة</p></div>
-    </article>
-    <article class="star-card" data-kind="actress classic">
-      <button class="photo-button" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Catherine_Deneuve,_actress.jpg" data-name="كاترين دونوف" data-caption="رمز من رموز السينما الفرنسية" data-credit="Bernard Gotfryd" data-license="مصنفة ملكية عامة وفق صفحة الملف؛ لا توجد قيود نشر معروفة لدى مكتبة الكونغرس، وقد تبقى حقوق الشخصية." data-source="https://commons.wikimedia.org/wiki/File:Catherine_Deneuve,_actress.jpg">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Catherine_Deneuve,_actress.jpg" alt="الممثلة الفرنسية كاترين دونوف" loading="lazy"><span class="view-mark">عرض الصورة ↗</span>
-      </button><div class="card-meta"><span>FRENCH · PORTRAIT</span><h3>كاترين دونوف</h3><p>رمز من رموز السينما الفرنسية</p></div>
-    </article>
-  </div>
-  <p class="gallery-note">مجموعة افتتاحية من نجوم حقيقيين. نضيف المزيد بعد مراجعة مصدر كل صورة وشروط استخدامها.</p>
-</section>
-<section class="closing"><span>THE MAGIC OF THE BIG SCREEN</span><h2>السينما... ذاكرةٌ لا تنطفئ</h2><p>من أوروبا إلى العالم، لكل وجه حكاية ولكل صورة لحظة تستحق التأمل.</p></section>
+  <span class="edition">THE CINEMA EXPERIENCE <i>2026</i></span>
+</header>
+
+<main id="home">
+  <section class="hero" aria-label="المشهد السينمائي الرئيسي">
+    <img class="hero-image" src="nokhba-cinema-hero.jpg" alt="الصورة السينمائية الرئيسية لنخبة سينما" fetchpriority="high">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="eyebrow">YOUR WORLD. YOUR CINEMA.</span>
+      <p class="hero-mini">حيث تبدأ الحكاية</p>
+      <h1>عِش اللحظة.<br><em>واكتشف الحكاية.</em></h1>
+      <p class="hero-desc">من الإثارة التي تحبس الأنفاس إلى القصص التي تبقى في الذاكرة… اكتشف عالم السينما بأسلوب نخبة.</p>
+      <a class="gold-button" href="#moods">ابدأ الاستكشاف <span aria-hidden="true">←</span></a>
+    </div>
+    <div class="hero-bottom"><span>NOKHBA CINEMA</span><span>THE ART OF MOVING STORIES</span></div>
+    <p class="image-note">الصورة الرئيسية المعتمدة ضمن ملفات المشروع.</p>
+  </section>
+
+  <section class="welcome" id="discover">
+    <div class="welcome-title">
+      <span class="section-kicker">WELCOME TO NOKHBA</span>
+      <h2>ليست مجرد أفلام…<br><em>إنها عوالم نعيشها.</em></h2>
+    </div>
+    <p>نخبة سينما مساحة عربية لاكتشاف الأفلام والنجوم، والتعرّف على الحكايات خلف الشاشة. اختر نوع التجربة التي تبحث عنها، ودعنا نرشدك إلى بداية مناسبة.</p>
+  </section>
+
+  <section class="moods" id="moods">
+    <div class="section-heading">
+      <div><span class="section-kicker">CHOOSE YOUR MOOD</span><h2>اختر عالمك السينمائي</h2></div>
+      <span class="heading-note">أربع بوابات… وتجارب بلا حدود</span>
+    </div>
+    <div class="mood-grid" role="group" aria-label="اختيار التصنيف السينمائي">
+      <button class="mood-card active" type="button" data-mood="action"><span class="mood-number">01</span><span class="mood-en">ACTION & THRILLER</span><strong>أكشن وإثارة</strong><span class="mood-desc">إيقاع سريع ومغامرات لا تهدأ</span></button>
+      <button class="mood-card" type="button" data-mood="drama"><span class="mood-number">02</span><span class="mood-en">DRAMA & STORIES</span><strong>دراما وحكايات</strong><span class="mood-desc">قصص تلامس القلب وتبقى في الذاكرة</span></button>
+      <button class="mood-card" type="button" data-mood="classic"><span class="mood-number">03</span><span class="mood-en">TIMELESS CLASSICS</span><strong>روائع كلاسيكية</strong><span class="mood-desc">أعمال صنعت تاريخ الشاشة</span></button>
+      <button class="mood-card" type="button" data-mood="family"><span class="mood-number">04</span><span class="mood-en">FAMILY & ADVENTURE</span><strong>عائلي ومغامرات</strong><span class="mood-desc">متعة تجمع أفراد العائلة</span></button>
+    </div>
+    <div class="mood-result" aria-live="polite">
+      <span class="result-label">اختيارك الآن</span>
+      <h3 id="mood-title">أكشن وإثارة</h3>
+      <p id="mood-text">إذا كنت تبحث عن التشويق والإيقاع السريع، فهذا عالمك. سنرتب لك قريبًا ترشيحات مختارة بعناية.</p>
+    </div>
+  </section>
+
+  <section class="assistant" aria-labelledby="assistant-title">
+    <div class="assistant-mark" aria-hidden="true">N</div>
+    <div class="assistant-copy">
+      <span class="section-kicker">COMING NEXT</span>
+      <h2 id="assistant-title">مساعد نخبة السينمائي</h2>
+      <p>نجهّز مساعدًا ذكيًا يفهم ذوقك، ويقترح لك ما تشاهده حسب النوع والمزاج والوقت المتاح. سيُفعّل بعد ربط خدمة الذكاء الاصطناعي والتحقق من عملها.</p>
+    </div>
+    <span class="assistant-status">قيد التجهيز</span>
+  </section>
+
+  <section class="about" id="about">
+    <span class="section-kicker">THE NOKHBA STANDARD</span>
+    <h2>اختيار واعٍ… وتجربة موثوقة.</h2>
+    <p>نلتزم بتقديم معلومات واضحة، واحترام حقوق الصور والمحتوى، وعدم تقديم أي ترشيح أو معلومة على أنها مؤكدة قبل التحقق منها.</p>
+  </section>
 </main>
-<footer><span>© 2026 NOKHBA CINEMA</span><span>الثقة · الفن · احترام حقوق الصورة</span><a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">مصادر الصور وتراخيصها</a></footer>
-<div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" aria-label="إغلاق">×</button><img src="" alt=""><div class="lightbox-caption"><strong></strong><span></span><div class="lightbox-attribution"><span class="lightbox-credit"></span><span class="lightbox-license"></span><a class="lightbox-source" href="#" target="_blank" rel="noopener noreferrer">صفحة المصدر والترخيص</a></div></div></div>
+
+<footer><span>© 2026 NOKHBA CINEMA</span><span>الثقة · الشغف · الحكاية</span><a href="#home">العودة إلى الأعلى ↑</a></footer>
 <script src="app.js"></script>
-</body></html>
+</body>
+</html>
