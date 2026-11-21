@@ -1,0 +1,9 @@
+# Publish only the actual website files from the repository root
+README.md
+UPLOAD-INSTRUCTIONS.txt
+docs/
+.git/
+.github/
+.wrangler/
+wrangler.jsonc
+.assetsignore
