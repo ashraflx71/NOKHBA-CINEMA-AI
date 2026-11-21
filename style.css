@@ -24,3 +24,20 @@ a{color:inherit;text-decoration:none}.topbar{height:82px;padding:0 clamp(18px,6v
 .lightbox-source{color:var(--gold2);text-decoration:underline;text-underline-offset:3px}
 .lightbox-source[hidden]{display:none}
 @media(max-width:600px){.lightbox{padding:48px 12px 125px}.lightbox-attribution{font-size:10px;gap:5px 10px}}
+
+
+/* Hero refresh: clean cinema photograph with independent navigation buttons */
+.brand-hero{background:#080606;line-height:0;overflow:hidden;border-bottom:1px solid #b9904e66}
+.brand-hero img{display:block;width:100%;height:clamp(300px,43vw,570px);max-height:none;object-fit:cover;object-position:center 48%;margin:0 auto}
+.hero-actions{padding:42px clamp(20px,7vw,105px) 48px;text-align:center;background:linear-gradient(180deg,#13090b,#090909);border-bottom:1px solid #ffffff1c}
+.hero-copy{max-width:760px;margin:0 auto}
+.hero-copy h1{font-size:clamp(30px,4.6vw,54px);line-height:1.45;margin:10px 0;color:#f0ece5}
+.hero-copy h1 em{font-style:normal;color:var(--gold)}
+.hero-copy p{color:#bcb5aa;font-size:14px;line-height:2;margin:0 auto;max-width:650px}
+.hero-buttons{display:flex;justify-content:center;align-items:stretch;gap:14px;flex-wrap:wrap;margin:28px auto 0}
+.hero-button{display:inline-flex;align-items:center;justify-content:center;min-height:58px;min-width:210px;padding:13px 24px;border:1px solid var(--gold);color:var(--gold2);font:600 14px Cairo,Arial,sans-serif;background:#c9a66b0d;transition:background .2s,color .2s,transform .2s}
+.hero-button:hover,.hero-button.primary{background:var(--gold);color:#100d09}
+.hero-button:hover{transform:translateY(-2px)}
+.hero-credit{margin:22px 0 0;color:#918779;font-size:10px;line-height:1.8}
+.hero-credit a{color:var(--gold2);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:600px){.brand-hero img{height:330px;object-fit:cover;object-position:center 45%}.hero-actions{padding:32px 18px 38px}.hero-copy h1{font-size:34px}.hero-copy p{font-size:12px}.hero-buttons{display:grid;grid-template-columns:1fr;gap:10px;margin-top:22px}.hero-button{width:100%;min-height:54px;font-size:13px}.hero-credit{font-size:9px}}
