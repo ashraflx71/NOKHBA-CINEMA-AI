@@ -16,3 +16,11 @@ a{color:inherit;text-decoration:none}.topbar{height:82px;padding:0 clamp(18px,6v
 .brand-hero{width:100%;background:#080808;line-height:0;overflow:hidden;border-bottom:1px solid #b9904e66}
 .brand-hero img{display:block;width:100%;height:auto;max-height:78vh;object-fit:contain;margin:0 auto}
 @media(max-width:600px){.brand-hero img{width:100%;height:auto;max-height:none;object-fit:contain}}
+
+/* Image fallback and source-credit details */
+.image-error{display:grid;place-items:center;width:100%;height:100%;padding:18px;text-align:center;color:#d8c7a6;font-size:13px;line-height:1.9;background:radial-gradient(ellipse at center,#29231a,#111)}
+.lightbox-caption{max-width:min(92vw,850px);width:100%}
+.lightbox-attribution{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px 16px;margin-top:9px;color:#b8ad9b;font-size:11px;line-height:1.8}
+.lightbox-source{color:var(--gold2);text-decoration:underline;text-underline-offset:3px}
+.lightbox-source[hidden]{display:none}
+@media(max-width:600px){.lightbox{padding:48px 12px 125px}.lightbox-attribution{font-size:10px;gap:5px 10px}}
