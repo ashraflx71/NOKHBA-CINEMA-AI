@@ -1,8 +1,10 @@
-NOKHBA CINEMA - Hero image upload
+NOKHBA CINEMA — Hero image
 
-Upload the folder/file structure in this ZIP to the root of your GitHub repository.
-The image must end up at:
-assets/nokhba-cinema-hero.jpg
+The homepage currently loads the hero image from the repository root:
+nokhba-cinema-hero.jpg
 
-If GitHub mobile does not preserve folders when uploading, create an assets folder first,
-then upload nokhba-cinema-hero.jpg inside it.
+Keep this exact filename and location unless index.html is updated at the same time.
+The separate gallery image supplied by the site owner is:
+1795220101330(2)-1.jpg
+
+Before publishing any third-party image, verify its source, license, attribution requirements, and any applicable personality/publicity rights.
