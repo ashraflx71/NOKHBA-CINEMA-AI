@@ -58,12 +58,11 @@
 
 <div class="creator-grid">
 <div class="field">
-<label for="duration">2. مدة الفيديو</label>
-<select id="duration">
-<option value="5">5 ثوانٍ</option>
-<option value="10">10 ثوانٍ</option>
+<label for="duration">2. مدة المعاينة المجانية</label>
+<select id="duration" disabled>
+<option value="15" selected>15 ثانية — معاينة مجانية</option>
 </select>
-<small>المدد المتاحة ستعتمد على نموذج الإنشاء الذي سنربطه.</small>
+<small>المعاينة الأولية ستكون 15 ثانية. مدة النسخة الكاملة وسعرها سيظهران بوضوح قبل أي دفع.</small>
 </div>
 <div class="field">
 <label for="ratio">3. مقاس الفيديو</label>
@@ -77,11 +76,16 @@
 </div>
 
 <div class="status-box">
-<strong>حالة الخدمة:</strong> تجهيز الواجهة اكتمل، لكن إنشاء الفيديو والدفع لم يتم تفعيلهما بعد. لن يتم تشغيل أي خدمة مدفوعة أو خصم أي مبلغ في هذه المرحلة.
+<strong>حالة الخدمة:</strong> نجهّز تجربة تبدأ بمعاينة مجانية مدتها 15 ثانية من وصف الزائر. محرك توليد الفيديو لم يُربط بعد، لذلك لا يتم إنشاء فيديو حقيقي في الوقت الحالي، ولا توجد أي عملية دفع أو خصم أموال.
 </div>
 
-<button class="launch-btn" type="button" disabled aria-disabled="true">سيتم تفعيل إنشاء الفيديو بعد ربط الدفع والذكاء الاصطناعي</button>
-<p class="hint">قبل الإطلاق، سيظهر السعر النهائي للمستخدم بوضوح، ولن يبدأ الإنشاء إلا بعد تأكيد الدفع. لا تضع أي مفاتيح سرية أو بيانات دفع في هذه الصفحة.</p>
+<div class="status-box" style="border-right-color:#8b744f;background:#171411">
+<strong>الخطوة التالية بعد ظهور المعاينة:</strong>
+<p style="margin:7px 0 0">يشاهد الزائر المعاينة أولًا، ثم يختار بحرية إن كان يريد استكمال الفيديو. قبل الاستكمال سنعرض المدة الكاملة والجودة والسعر النهائي بوضوح، ولن نطلب الدفع إلا بعد موافقته.</p>
+</div>
+
+<button class="launch-btn" type="button" disabled aria-disabled="true">معاينة مجانية — 15 ثانية (بانتظار ربط محرك الفيديو)</button>
+<p class="hint">زر المعاينة معطّل عمدًا إلى أن نربط محركًا فعليًا ونختبر تكلفته. لن نعرض سعرًا تخمينيًا، ولن نفعّل الدفع أو نخصم أي مبلغ قبل موافقتك الصريحة.</p>
 </section>
 <a class="back-link" href="index.html">← العودة إلى NOKHBA CINEMA</a>
 </main>
