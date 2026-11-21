@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 500" role="img" aria-labelledby="title desc">
+<title id="title">NOKHBA CINEMA golden film reel</title><desc id="desc">A gold cinema reel with a long flowing film strip on a transparent background.</desc>
+<defs><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5d98c"/><stop offset=".48" stop-color="#c99a36"/><stop offset="1" stop-color="#8d641e"/></linearGradient><linearGradient id="film" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#36302a"/><stop offset="1" stop-color="#111"/></linearGradient></defs>
+<g stroke="url(#gold)" stroke-width="8" stroke-linejoin="round">
+<ellipse cx="240" cy="105" rx="92" ry="70" transform="rotate(-35 240 105)" fill="url(#gold)"/>
+<ellipse cx="240" cy="105" rx="92" ry="70" transform="rotate(35 240 105)" fill="none" opacity=".85"/>
+<ellipse cx="240" cy="105" rx="92" ry="70" transform="rotate(90 240 105)" fill="none" opacity=".8"/>
+</g>
+<g fill="#111"><ellipse cx="240" cy="105" rx="22" ry="48" transform="rotate(35 240 105)"/><ellipse cx="240" cy="105" rx="22" ry="48" transform="rotate(125 240 105)"/><ellipse cx="240" cy="105" rx="22" ry="48" transform="rotate(215 240 105)"/><ellipse cx="240" cy="105" rx="22" ry="48" transform="rotate(305 240 105)"/></g>
+<path d="M188 164 C160 220 115 260 74 300 C29 344 53 399 122 399 C206 399 275 345 322 290 C354 252 365 224 350 202" fill="none" stroke="url(#gold)" stroke-width="66" stroke-linecap="round"/>
+<path d="M188 164 C160 220 115 260 74 300 C29 344 53 399 122 399 C206 399 275 345 322 290 C354 252 365 224 350 202" fill="none" stroke="url(#film)" stroke-width="48" stroke-linecap="round"/>
+<path d="M188 164 C160 220 115 260 74 300 C29 344 53 399 122 399 C206 399 275 345 322 290 C354 252 365 224 350 202" fill="none" stroke="#c99a36" stroke-width="2" stroke-dasharray="2 3" opacity=".7"/>
+<g fill="#d6ad56"><path d="M164 218l-13 14 12 9 13-14z"/><path d="M130 258l-14 13 13 10 14-14z"/><path d="M91 298l-11 13 15 8 11-13z"/><path d="M75 345l-1 16 17 2 1-16z"/><path d="M115 378l8 14 15-8-8-14z"/><path d="M166 376l6 15 16-6-6-15z"/><path d="M222 355l9 14 14-10-9-13z"/><path d="M273 318l11 12 12-12-11-12z"/><path d="M315 269l14 9 9-14-14-9z"/></g>
+</svg>
