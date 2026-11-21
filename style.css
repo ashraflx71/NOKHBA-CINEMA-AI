@@ -41,3 +41,14 @@ a{color:inherit;text-decoration:none}.topbar{height:82px;padding:0 clamp(18px,6v
 .hero-credit{margin:22px 0 0;color:#918779;font-size:10px;line-height:1.8}
 .hero-credit a{color:var(--gold2);text-decoration:underline;text-underline-offset:3px}
 @media(max-width:600px){.brand-hero img{height:330px;object-fit:cover;object-position:center 45%}.hero-actions{padding:32px 18px 38px}.hero-copy h1{font-size:34px}.hero-copy p{font-size:12px}.hero-buttons{display:grid;grid-template-columns:1fr;gap:10px;margin-top:22px}.hero-button{width:100%;min-height:54px;font-size:13px}.hero-credit{font-size:9px}}
+
+
+/* Visibility safeguard for hero navigation on desktop and mobile */
+.hero-actions{display:block!important;visibility:visible!important;opacity:1!important;position:relative;z-index:4;min-height:260px}
+.hero-actions .hero-buttons{display:flex!important;visibility:visible!important;opacity:1!important;position:relative;z-index:5;min-height:58px}
+.hero-actions .hero-button{display:inline-flex!important;visibility:visible!important;opacity:1!important}
+@media(max-width:600px){
+ .hero-actions{min-height:390px!important}
+ .hero-actions .hero-buttons{display:grid!important;grid-template-columns:1fr!important}
+ .hero-actions .hero-button{width:100%!important;min-height:58px!important}
+}
