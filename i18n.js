@@ -44,10 +44,13 @@ document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
 document.querySelectorAll("body *").forEach(el => {
 for (const attr of ["placeholder","aria-label","alt","title","data-prompt"]) {
 const val = el.getAttribute(attr);
-if (val && attrTranslations[attr] && attrTranslations[attr][val]) {
+if (val && attrTranslations[attr]) {
 if (!original.has(el)) original.set(el, {});
 if (original.get(el)[attr] === undefined) original.get(el)[attr] = val;
-el.setAttribute(attr, lang === "en" ? attrTranslations[attr][val] : original.get(el)[attr]);
+const sourceValue = original.get(el)[attr];
+if (attrTranslations[attr][sourceValue]) {
+el.setAttribute(attr, lang === "en" ? attrTranslations[attr][sourceValue] : sourceValue);
+}
 }
 }
 });
