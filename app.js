@@ -51,3 +51,9 @@ function closeViewer(){
 lightbox.querySelector('.lightbox-close').addEventListener('click',closeViewer);
 lightbox.addEventListener('click',event=>{if(event.target===lightbox)closeViewer();});
 document.addEventListener('keydown',event=>{if(event.key==='Escape')closeViewer();});
+
+/* Hero shortcut: activate the existing classic-film filter. */
+document.querySelector('[data-show-classic]')?.addEventListener('click',()=>{
+  const classicFilter=document.querySelector('.filter[data-filter="classic"]');
+  if(classicFilter) classicFilter.click();
+});
