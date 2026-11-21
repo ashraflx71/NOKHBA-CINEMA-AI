@@ -4,9 +4,30 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#090707">
-<meta name="description" content="إنشاء فيديوهات | NOKHBA CINEMA">
-<title>إنشاء فيديوهات | NOKHBA CINEMA</title>
+<meta name="description" content="أنشئ فكرة فيديو من وصفك النصي مع NOKHBA CINEMA">
+<title>إنشاء فيديو بالنص | NOKHBA CINEMA</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.creator-wrap{width:min(900px,92%);margin:0 auto 70px}
+.creator-intro{text-align:center;padding:35px 12px 22px}
+.creator-intro h1{color:#e0bd78;font-size:clamp(2rem,5vw,3rem);margin:12px 0}
+.creator-intro p{color:#c9c0b7;line-height:1.9}
+.creator-panel{background:#151110;border:1px solid #57432b;border-radius:16px;padding:clamp(18px,4vw,32px);box-shadow:0 12px 35px #0005}
+.field{margin:0 0 22px}
+.field label{display:block;color:#f0d49b;font-weight:700;margin-bottom:9px}
+.field textarea,.field select{width:100%;box-sizing:border-box;background:#090807;color:#f5eee5;border:1px solid #665137;border-radius:9px;padding:13px;font:inherit}
+.field textarea{min-height:150px;resize:vertical;line-height:1.9}
+.field textarea:focus,.field select:focus{outline:2px solid #b58a49;outline-offset:2px}
+.field small,.hint{display:block;color:#bdb3a7;line-height:1.8;margin-top:7px}
+.counter{color:#c8b28e;text-align:left;font-size:.85rem}
+.creator-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+.examples{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.example{border:1px solid #80633b;background:#211910;color:#e7c98f;border-radius:20px;padding:7px 11px;font:inherit;cursor:pointer}
+.example:hover{background:#382a1b}
+.status-box{background:#211a12;border-right:3px solid #b58a49;border-radius:7px;padding:13px;color:#e4d4bb;line-height:1.9;margin:20px 0}
+.launch-btn{width:100%;border:1px solid #80633b;border-radius:9px;background:#49351f;color:#e9d6b3;padding:14px;font:inherit;font-weight:700;opacity:.7;cursor:not-allowed}
+.back-link{display:inline-block;margin-top:22px;color:#e0bd78}
+</style>
 </head>
 <body>
 <header class="topbar">
@@ -14,19 +35,69 @@
 <nav class="nav" aria-label="القائمة الرئيسية"><a href="index.html">الرئيسية</a><a href="gallery.html">معرض النجوم</a><a href="about.html">عن نخبة سينما</a></nav>
 <span class="edition">THE CINEMA EDITION <i>2026</i></span>
 </header>
-<main>
-<section class="page-heading">
-<span class="section-kicker">CREATIVE STUDIO</span>
-<h1>إنشاء فيديوهات</h1>
-<p>مساحة إعداد أفكار ومشروعات صناعة الفيديو والأدوات الإبداعية.</p>
+
+<main class="creator-wrap">
+<section class="creator-intro">
+<span class="section-kicker">AI TEXT TO VIDEO STUDIO</span>
+<h1>حوّل كلماتك إلى فيديو</h1>
+<p>اكتب وصف المشهد الذي تتخيله، وسنجهّز طلب إنشاء الفيديو بالذكاء الاصطناعي. لا تحتاج إلى رفع صورة؛ البداية من النص فقط.</p>
 <a class="text-link" href="index.html">العودة إلى الصفحة الرئيسية ←</a>
 </section>
-<section class="quote-section">
-<span class="section-kicker">NOKHBA CINEMA</span>
-<h2>هذا القسم قيد <em>التجهيز</em></h2>
-<p>سيُضاف المحتوى بعد مراجعته واختياره بعناية.</p>
+
+<section class="creator-panel" aria-labelledby="prompt-title">
+<div class="field">
+<label id="prompt-title" for="videoPrompt">1. اكتب وصف الفيديو الذي تريده</label>
+<textarea id="videoPrompt" maxlength="1200" placeholder="مثال: مشهد سينمائي لشروق الشمس فوق البحر، أمواج هادئة وانعكاس الضوء الذهبي، حركة كاميرا بطيئة، تفاصيل واقعية وجودة سينمائية..."></textarea>
+<div class="counter"><span id="count">0</span> / 1200 حرف</div>
+<div class="examples" aria-label="أمثلة جاهزة">
+<button class="example" type="button" data-prompt="لقطة سينمائية واقعية لشروق الشمس فوق البحر، أمواج ذهبية هادئة، حركة كاميرا بطيئة، إضاءة طبيعية وتفاصيل فائقة.">شروق فوق البحر</button>
+<button class="example" type="button" data-prompt="مشهد وثائقي للحياة البرية في غابة خضراء، طيور تحلق بين الأشجار وأشعة الشمس تخترق الأوراق، تصوير سينمائي واقعي.">الحياة البرية</button>
+<button class="example" type="button" data-prompt="مشهد خيال علمي لمدينة مستقبلية ليلًا، مبانٍ مضيئة ومركبات طائرة، حركة كاميرا انسيابية وأجواء سينمائية.">مدينة مستقبلية</button>
+</div>
+</div>
+
+<div class="creator-grid">
+<div class="field">
+<label for="duration">2. مدة الفيديو</label>
+<select id="duration">
+<option value="5">5 ثوانٍ</option>
+<option value="10">10 ثوانٍ</option>
+</select>
+<small>المدد المتاحة ستعتمد على نموذج الإنشاء الذي سنربطه.</small>
+</div>
+<div class="field">
+<label for="ratio">3. مقاس الفيديو</label>
+<select id="ratio">
+<option value="16:9">أفقي — 16:9</option>
+<option value="9:16">رأسي — 9:16</option>
+<option value="1:1">مربع — 1:1</option>
+</select>
+<small>الأفقي مناسب للشاشة، والرأسي مناسب للهاتف.</small>
+</div>
+</div>
+
+<div class="status-box">
+<strong>حالة الخدمة:</strong> تجهيز الواجهة اكتمل، لكن إنشاء الفيديو والدفع لم يتم تفعيلهما بعد. لن يتم تشغيل أي خدمة مدفوعة أو خصم أي مبلغ في هذه المرحلة.
+</div>
+
+<button class="launch-btn" type="button" disabled aria-disabled="true">سيتم تفعيل إنشاء الفيديو بعد ربط الدفع والذكاء الاصطناعي</button>
+<p class="hint">قبل الإطلاق، سيظهر السعر النهائي للمستخدم بوضوح، ولن يبدأ الإنشاء إلا بعد تأكيد الدفع. لا تضع أي مفاتيح سرية أو بيانات دفع في هذه الصفحة.</p>
 </section>
+<a class="back-link" href="index.html">← العودة إلى NOKHBA CINEMA</a>
 </main>
+
 <footer><span>© 2026 NOKHBA CINEMA</span><span>الثقة · الفن · احترام حقوق الصورة</span><a href="index.html">الرئيسية</a></footer>
+<script>
+const promptField = document.getElementById('videoPrompt');
+const count = document.getElementById('count');
+promptField.addEventListener('input', () => { count.textContent = promptField.value.length; });
+document.querySelectorAll('.example').forEach(button => {
+  button.addEventListener('click', () => {
+    promptField.value = button.dataset.prompt;
+    count.textContent = promptField.value.length;
+    promptField.focus();
+  });
+});
+</script>
 </body>
 </html>
