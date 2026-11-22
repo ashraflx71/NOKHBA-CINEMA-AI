@@ -4,11 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#090707">
-<meta name="description" content="NOKHBA CINEMA — بوابة بصرية فاخرة لعالم السينما والصورة والفيديو والخيال والطبيعة.">
+<meta name="description" content="نخبة سينما — نافذتك إلى عالم السينما والصورة والفيديو والخيال العلمي وجمال الطبيعة.">
+<meta property="og:title" content="NOKHBA CINEMA | نخبة سينما">
+<meta property="og:description" content="حيث تلتقي الحكاية بالصورة والخيال.">
+<meta property="og:image" content="nokhba-cinema-hero.jpg">
 <title>NOKHBA CINEMA | نخبة سينما</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261122-home">
 <link rel="manifest" href="./manifest.json">
 <link rel="icon" href="./icons/nokhba-cinema.svg" type="image/svg+xml">
 <meta name="mobile-web-app-capable" content="yes">
@@ -22,51 +25,50 @@
     <span class="brand-wordmark"><strong>NOKHBA</strong><small>CINEMA</small></span>
   </a>
   <nav class="nav" aria-label="القائمة الرئيسية">
-    <a class="current" href="index.html">الرئيسية</a>
+    <a class="current" href="index.html" aria-current="page">الرئيسية</a>
+    <a href="movies.html">الأفلام</a>
     <a href="gallery.html">معرض النجوم</a>
+    <a href="videos.html">الفيديوهات</a>
     <a href="about.html">عن نخبة سينما</a>
   </nav>
   <span class="edition">THE CINEMA EDITION <i>2026</i></span>
 </header>
 <main>
-  <section class="cinema-visual-cover" aria-label="واجهة نخبة سينما">
-    <img src="nokhba-cinema-hero.jpg" alt="الواجهة السينمائية الرئيسية لنخبة سينما NOKHBA CINEMA" fetchpriority="high">
-    <p>مرحباً بكم في عالم <strong>NOKHBA CINEMA</strong> — حيث تلتقي الحكاية بالصورة والخيال.</p>
-  </section>
-  <section class="home-welcome">
-    <span class="section-kicker">WELCOME TO NOKHBA</span>
-    <h2>اكتشف عوالم <em>نخبة سينما</em></h2>
-    <p>اختر القسم الذي تحب استكشافه. بوابة بصرية تجمع السينما والصور والفيديو والخيال العلمي وجمال الطبيعة.</p>
-  </section>
-  <section class="home-sections" aria-label="أقسام نخبة سينما">
-    <div class="home-section-grid">
-      <a class="home-tile" href="movies.html">
-        <img src="nokhba-cinema-hero.jpg" alt="" loading="lazy">
-        <div class="home-tile-content"><span class="home-tile-number">01 · CINEMA</span><h3>أفلام طويلة</h3><p>رحلة إلى عالم الحكايات السينمائية</p></div><span class="home-tile-arrow" aria-hidden="true">←</span>
-      </a>
-      <a class="home-tile" href="gallery.html">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/AudreyKHepburn.jpg" alt="" loading="lazy">
-        <div class="home-tile-content"><span class="home-tile-number">02 · PHOTOGRAPHY</span><h3>صور سينمائية</h3><p>وجوه ولقطات من ذاكرة الشاشة</p></div><span class="home-tile-arrow" aria-hidden="true">←</span>
-      </a>
-      <a class="home-tile" href="videos.html">
-        <img src="https://images.pexels.com/photos/36136492/pexels-photo-36136492.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy">
-        <div class="home-tile-content"><span class="home-tile-number">03 · VIDEOS</span><h3>فيديوهات</h3><p>مساحة للمشاهد واللقطات المرئية</p></div><span class="home-tile-arrow" aria-hidden="true">←</span>
-      </a>
-      <a class="home-tile" href="create-video.html">
-        <img src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy">
-        <div class="home-tile-content"><span class="home-tile-number">04 · CREATIVE STUDIO</span><h3>إنشاء فيديوهات</h3><p>أفكار وأدوات لصناعة محتوى مرئي</p></div><span class="home-tile-arrow" aria-hidden="true">←</span>
-      </a>
-      <a class="home-tile" href="science-fiction.html">
-        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy">
-        <div class="home-tile-content"><span class="home-tile-number">05 · SCIENCE FICTION</span><h3>الخيال العلمي</h3><p>عوالم مستقبلية تتجاوز حدود الخيال</p></div><span class="home-tile-arrow" aria-hidden="true">←</span>
-      </a>
-      <a class="home-tile" href="nature.html">
-        <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy">
-        <div class="home-tile-content"><span class="home-tile-number">06 · NATURE</span><h3>عالم الطبيعة</h3><p>تأمل جمال الأرض وروائع الخلق</p></div><span class="home-tile-arrow" aria-hidden="true">←</span>
-      </a>
+  <section class="nokhba-hero" aria-labelledby="hero-title">
+    <div class="nokhba-hero-art"><img src="nokhba-cinema-hero.jpg" alt="بكرة فيلم سينمائي ذهبية ترمز إلى نخبة سينما" fetchpriority="high"></div>
+    <div class="nokhba-hero-shade" aria-hidden="true"></div>
+    <div class="nokhba-hero-copy">
+      <span class="nokhba-eyebrow">WELCOME TO NOKHBA CINEMA</span>
+      <p class="nokhba-hero-overline">حكايات تُروى… وصور تبقى</p>
+      <h1 id="hero-title">عالم السينما<br><em>بين يديك</em></h1>
+      <p class="nokhba-hero-description">اكتشف روائع الشاشة، وتأمل وجوه النجوم، وانطلق إلى عوالم الفيديو والخيال العلمي وجمال الطبيعة. أهلاً بك في تجربة نخبة سينما.</p>
+      <div class="nokhba-hero-actions">
+        <a class="nokhba-button nokhba-button-gold" href="movies.html">اكتشف عالم الأفلام <span aria-hidden="true">←</span></a>
+        <a class="nokhba-button nokhba-button-outline" href="gallery.html">تصفّح معرض النجوم</a>
+      </div>
     </div>
-    <div class="home-gallery-link"><a href="gallery.html">الدخول إلى معرض النجوم <span aria-hidden="true">←</span></a></div>
+    <div class="nokhba-hero-foot"><span>THE ART OF CINEMA</span><span>الثقة · الفن · احترام حقوق الصورة</span></div>
   </section>
+  <section class="nokhba-intro" aria-label="مقدمة">
+    <span class="nokhba-section-label">A WORLD OF STORIES</span>
+    <h2>كل لقطة لها <em>حكاية</em></h2>
+    <p>من سحر السينما إلى اتساع الخيال، صممنا هذه المساحة لتكون نافذتك لاكتشاف الصورة والفكرة والإبداع.</p>
+  </section>
+  <section class="nokhba-discover" aria-labelledby="discover-title">
+    <div class="nokhba-section-heading">
+      <div><span class="nokhba-section-label">EXPLORE NOKHBA</span><h2 id="discover-title">اكتشف أقسام <em>نخبة سينما</em></h2></div>
+      <span class="nokhba-heading-note">اختر رحلتك القادمة</span>
+    </div>
+    <div class="nokhba-card-grid">
+      <a class="nokhba-card nokhba-card-movies" href="movies.html"><img src="nokhba-cinema-hero.jpg" alt="" loading="lazy"><span class="nokhba-card-index">01 / CINEMA</span><div><h3>عالم الأفلام</h3><p>حكايات ومغامرات على الشاشة</p></div><span class="nokhba-card-arrow" aria-hidden="true">←</span></a>
+      <a class="nokhba-card" href="gallery.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/AudreyKHepburn.jpg" alt="" loading="lazy"><span class="nokhba-card-index">02 / STARS</span><div><h3>معرض النجوم</h3><p>وجوه صنعت ذاكرة السينما</p></div><span class="nokhba-card-arrow" aria-hidden="true">←</span></a>
+      <a class="nokhba-card" href="videos.html"><img src="https://images.pexels.com/photos/36136492/pexels-photo-36136492.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy"><span class="nokhba-card-index">03 / VIDEOS</span><div><h3>عالم الفيديو</h3><p>شاهد واستمتع بالمحتوى المرئي</p></div><span class="nokhba-card-arrow" aria-hidden="true">←</span></a>
+      <a class="nokhba-card" href="create-video.html"><img src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy"><span class="nokhba-card-index">04 / CREATIVE STUDIO</span><div><h3>استوديو الإبداع</h3><p>أفكار لصناعة محتوى مرئي</p></div><span class="nokhba-card-arrow" aria-hidden="true">←</span></a>
+      <a class="nokhba-card" href="science-fiction.html"><img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy"><span class="nokhba-card-index">05 / BEYOND</span><div><h3>الخيال العلمي</h3><p>رحلات إلى المستقبل وما وراءه</p></div><span class="nokhba-card-arrow" aria-hidden="true">←</span></a>
+      <a class="nokhba-card" href="nature.html"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy"><span class="nokhba-card-index">06 / NATURE</span><div><h3>عالم الطبيعة</h3><p>تأمل جمال الأرض وروائع الخلق</p></div><span class="nokhba-card-arrow" aria-hidden="true">←</span></a>
+    </div>
+  </section>
+  <section class="nokhba-signoff"><span class="nokhba-section-label">NOKHBA CINEMA</span><h2>الصورة فن… <em>والحكاية لا تنتهي</em></h2><a href="about.html">تعرّف على رؤيتنا وقيمنا <span aria-hidden="true">←</span></a></section>
 </main>
 <footer><span>© 2026 NOKHBA CINEMA</span><span>الثقة · الفن · احترام حقوق الصورة</span><a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">مصادر الصور وتراخيصها</a></footer>
 <script src="i18n.js?v=20261121-2"></script>
