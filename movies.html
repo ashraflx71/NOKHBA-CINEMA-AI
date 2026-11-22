@@ -31,6 +31,11 @@
 @media(max-width:760px){.movie-feature{grid-template-columns:1fr}.movie-info{display:grid;grid-template-columns:110px 1fr;gap:0 16px}.movie-poster{grid-row:1/5;width:110px;max-height:155px;margin:0}.movie-info .eyebrow,.movie-info h2,.movie-info p,.movie-facts,.movie-links{grid-column:2}.movie-info p{margin:5px 0}.movie-facts{margin:8px 0}.movie-links{margin-top:8px}}
 @media(max-width:420px){.movie-info{display:block}.movie-poster{width:145px;max-height:195px;margin:0 auto 16px}.movie-info{text-align:center}.movie-facts,.movie-links{justify-content:center}}
 </style>
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icons/nokhba-cinema.svg" type="image/svg+xml">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="نخبة سينما">
 </head>
 <body>
 <header class="topbar">
@@ -75,5 +80,6 @@
 </main>
 <footer><span>© 2026 NOKHBA CINEMA</span><span>الثقة · الفن · احترام حقوق الصورة</span><a href="index.html">الرئيسية</a></footer>
 <script src="i18n.js?v=20261121-3"></script>
+<script src="./pwa.js?v=1.0.0" defer></script>
 </body>
 </html>
