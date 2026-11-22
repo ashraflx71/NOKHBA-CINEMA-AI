@@ -1,0 +1,30 @@
+{
+  "id": "./",
+  "name": "NOKHBA CINEMA | نخبة سينما",
+  "short_name": "نخبة سينما",
+  "description": "بوابة نخبة سينما لعالم الصورة والحكاية والإبداع المرئي.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#090707",
+  "theme_color": "#090707",
+  "categories": ["entertainment", "education", "photography"],
+  "icons": [
+    {
+      "src": "./icons/nokhba-cinema.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/nokhba-cinema.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
