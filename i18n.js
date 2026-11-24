@@ -64,7 +64,7 @@
     "عارض الصور":"Image Viewer",
     "إغلاق":"Close",
     "صفحة المصدر والترخيص":"Source and License Page",
-    "عن نخبة سينما":"About NOKHBA CINEMA",
+    
     "مساحة تحتفي بالفن السابع، وتضع الثقة واحترام الحقوق في قلب التجربة.":"A space celebrating the seventh art, with trust and respect for rights at its heart.",
     "رؤية سينمائية":"A Cinematic Vision",
     "بروح راقية":"With an Elegant Spirit",
@@ -138,8 +138,8 @@
       const key = original.trim();
       const translated = textMap[key];
       if (!translated) { node.nodeValue = original; return; }
-      const leading = original.match(/^\s*/)[0];
-      const trailing = original.match(/\s*$/)[0];
+      const leading = original.slice(0, original.length - original.trimStart().length);
+      const trailing = original.slice(original.trimEnd().length);
       node.nodeValue = leading + (english ? translated : key) + trailing;
     });
     attrNodes.forEach(({el,attr,original}) => {
