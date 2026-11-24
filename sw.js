@@ -57,7 +57,7 @@ self.addEventListener("fetch", event => {
         .then(response => {
           if (response && response.ok) {
             const copy = response.clone();
-            caches.open(PAGE_CACHE).then(cache => cache.put(request, copy));
+            void caches.open(PAGE_CACHE).then(cache => cache.put(request, copy)).catch(() => {});
           }
           return response;
         })
@@ -74,7 +74,7 @@ self.addEventListener("fetch", event => {
       const networkUpdate = fetch(request).then(response => {
         if (response && response.ok && response.type === "basic") {
           const copy = response.clone();
-          caches.open(STATIC_CACHE).then(cache => cache.put(request, copy));
+          void caches.open(STATIC_CACHE).then(cache => cache.put(request, copy)).catch(() => {});
         }
         return response;
       }).catch(() => cached);
