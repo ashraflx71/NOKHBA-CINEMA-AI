@@ -15,7 +15,7 @@ button{font:inherit}
 .nav a:hover,.nav a.current,footer a:hover{color:var(--gold-light)}
 .edition{font:10px var(--serif);letter-spacing:1.5px;color:#aaa095;white-space:nowrap}
 .edition i{font-style:normal;color:var(--gold);margin-right:7px}
-.home-hero{min-height:min(760px,78vw);height:690px;max-height:calc(100svh - 82px);min-height:570px;position:relative;display:flex;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 75% 48%,#421923 0,#1b1012 36%,#090707 76%)}
+.home-hero{height:690px;max-height:calc(100svh - 82px);min-height:570px;position:relative;display:flex;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 75% 48%,#421923 0,#1b1012 36%,#090707 76%)}
 .home-hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 48%;opacity:.52;filter:brightness(.7) saturate(.72)}
 .home-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,#090707 0%,#090707e8 28%,#09070780 62%,#09070720 100%),linear-gradient(0deg,#090707 0%,transparent 38%,#09070755 100%)}
 .home-hero-content{position:relative;z-index:1;width:min(650px,80%);margin-right:clamp(25px,10vw,150px);padding:65px 0}
