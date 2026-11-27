@@ -146,7 +146,6 @@
     "جمال الحضارة":"The Beauty of",
     "الإسلامية":"Islamic Civilization",
     "مساجد عريقة، وفنون هندسية، ومخطوطات، وشواهد من تاريخ العلم والمعرفة.":"Historic mosques, geometric arts, manuscripts, and landmarks from the history of science and knowledge.",
-    "العودة إلى الرئيسية":"Back to Home",
     "نافذة على حضارة امتد نورها":"A Window into a Civilization Whose Light Endures",
     "المساجد والعمارة":"Mosques and Architecture",
     "الفنون والزخرفة":"Arts and Ornamentation",
@@ -172,8 +171,6 @@
     "زخارف هندسية على باب مدرسة بو عنانية في مدينة فاس المغربية.":"Geometric ornamentation on the door of Bou Inania Madrasa in Fez, Morocco.",
     "نقش هندسي إسلامي":"Islamic Geometric Pattern",
     "نمط زخرفي هندسي مستلهم من الفن الإسلامي.":"A geometric ornamental pattern inspired by Islamic art.",
-    "عرض الصورة ↗":"View Image ↗",
-    "صفحة المصدر والترخيص":"Source and License Page"
 
   };
   const attrMap = {
