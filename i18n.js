@@ -188,16 +188,44 @@
       "أمثلة جاهزة":"Ready-made examples",
       "عارض الصور":"Image viewer",
       "إغلاق":"Close",
-      "شعار نخبة":"NOKHBA logo"
+      "شعار نخبة":"NOKHBA logo",
+      "عرض صورة جامع القيروان":"View the Great Mosque of Kairouan",
+      "عرض المشهد البانورامي لجامع القيروان":"View the Panoramic Scene of the Great Mosque of Kairouan",
+      "عرض الزخارف الهندسية الإسلامية":"View Islamic Geometric Ornamentation",
+      "عرض النقش الهندسي الإسلامي":"View the Islamic Geometric Pattern"
     },
     alt: {
       "شعار نخبة":"NOKHBA logo",
-      "شعار نخبة سينما":"NOKHBA CINEMA logo"
+      "شعار نخبة سينما":"NOKHBA CINEMA logo",
+      "جامع القيروان التاريخي في تونس":"The historic Great Mosque of Kairouan in Tunisia",
+      "مشهد بانورامي لجامع القيروان":"Panoramic view of the Great Mosque of Kairouan",
+      "زخارف هندسية إسلامية على باب مدرسة تاريخية في فاس":"Islamic geometric ornamentation on a historic school door in Fez",
+      "نقش هندسي إسلامي متكرر":"Repeating Islamic geometric pattern"
+    },
+    "data-name": {
+      "جامع عقبة بن نافع – القيروان":"Uqba ibn Nafi Mosque – Kairouan",
+      "مشهد بانورامي لجامع القيروان":"Panoramic View of the Great Mosque of Kairouan",
+      "زخارف هندسية إسلامية في مدرسة بو عنانية":"Islamic Geometric Patterns at Bou Inania Madrasa",
+      "نقش هندسي إسلامي":"Islamic Geometric Pattern"
+    },
+    "data-caption": {
+      "مشهد من جامع القيروان العريق في تونس.":"A view of the historic Great Mosque of Kairouan in Tunisia.",
+      "إطلالة بانورامية على جامع القيروان.":"A panoramic view of the Great Mosque of Kairouan.",
+      "زخارف هندسية على باب مدرسة بو عنانية في مدينة فاس المغربية.":"Geometric ornamentation on the door of Bou Inania Madrasa in Fez, Morocco.",
+      "نمط زخرفي هندسي مستلهم من الفن الإسلامي.":"A geometric ornamental pattern inspired by Islamic art."
+    },
+    "data-license": {
+      "Creative Commons Attribution-ShareAlike 3.0؛ يُذكر المصور والترخيص.":"Creative Commons Attribution-ShareAlike 3.0; credit the photographer and license.",
+      "Creative Commons Attribution 2.0؛ يُذكر المصور ورابط الترخيص.":"Creative Commons Attribution 2.0; credit the photographer and link to the license.",
+      "Creative Commons Attribution-ShareAlike 4.0؛ يُذكر المصور والترخيص.":"Creative Commons Attribution-ShareAlike 4.0; credit the photographer and license.",
+      "Creative Commons Attribution-ShareAlike 4.0؛ يُذكر المصمم والترخيص.":"Creative Commons Attribution-ShareAlike 4.0; credit the designer and license."
     }
   };
   const titleMap = {
     "إنشاء فيديو بالنص | NOKHBA CINEMA":"Text-to-Video Studio | NOKHBA CINEMA",
     "معرض النجوم | NOKHBA CINEMA":"Star Gallery | NOKHBA CINEMA",
+    "المعرض الإسلامي | NOKHBA CINEMA":"Islamic Gallery | NOKHBA CINEMA",
+    "ساهم في استمرار الخير | نخبة سينما":"Help Sustain This Good Work | NOKHBA CINEMA",
     "عن نخبة سينما | NOKHBA CINEMA":"About NOKHBA CINEMA | NOKHBA CINEMA",
     "أفلام طويلة | NOKHBA CINEMA":"Feature Films | NOKHBA CINEMA",
     "الفيديوهات | NOKHBA CINEMA":"Videos | NOKHBA CINEMA",
@@ -210,7 +238,7 @@
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   while (walker.nextNode()) textNodes.push({node:walker.currentNode, original:walker.currentNode.nodeValue});
   document.querySelectorAll("body *").forEach(el => {
-    ["placeholder","data-prompt","aria-label","alt"].forEach(attr => {
+    ["placeholder","data-prompt","aria-label","alt","data-name","data-caption","data-license"].forEach(attr => {
       if (el.hasAttribute(attr)) attrNodes.push({el,attr,original:el.getAttribute(attr)});
     });
   });
