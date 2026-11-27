@@ -90,6 +90,7 @@
     "رسالة نخبة سينما:":"A Message from NOKHBA CINEMA:",
     "الأفلام":"Films",
     "التراث الإسلامي":"Islamic Heritage",
+    "العمارة والفنون وشواهد الحضارة":"Architecture, arts, and traces of civilization",
     "معرض التراث الإسلامي | NOKHBA CINEMA":"Islamic Heritage Gallery | NOKHBA CINEMA",
     "جمال الحضارة":"The Beauty of",
     "الإسلامية":"Islamic Civilization",
@@ -143,6 +144,29 @@
       "إغلاق":"Close",
       "شعار نخبة":"NOKHBA logo"
     },
+    "data-name": {
+      "جامع القيروان":"Great Mosque of Kairouan",
+      "مشهد بانورامي لجامع القيروان":"Panoramic View of the Great Mosque of Kairouan",
+      "زخارف هندسية إسلامية في فاس":"Islamic Geometric Patterns in Fez",
+      "نقش هندسي إسلامي":"Islamic Geometric Pattern"
+    },
+    "data-caption": {
+      "الجامع الكبير في القيروان، تونس.":"The Great Mosque in Kairouan, Tunisia.",
+      "إطلالة بانورامية على جامع القيروان.":"A panoramic view of the Great Mosque of Kairouan.",
+      "زخارف هندسية على باب مدرسة بو عنانية في مدينة فاس المغربية.":"Geometric patterns on the door of Bou Inania Madrasa in Fez, Morocco.",
+      "نمط زخرفي هندسي مستلهم من الفن الإسلامي.":"A geometric ornamental pattern inspired by Islamic art."
+    },
+    "data-credit": {
+      "Cimoi":"Cimoi",
+      "nivea-cream (albina&kostya)":"nivea-cream (albina&kostya)",
+      "Tmahaffey3":"Tmahaffey3",
+      "Moelja":"Moelja"
+    },
+    "data-license": {
+      "Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) أو GNU FDL 1.2+؛ راجع صفحة المصدر.":"Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) or GNU FDL 1.2+; see the source page.",
+      "Creative Commons Attribution 2.0 Generic (CC BY 2.0).":"Creative Commons Attribution 2.0 Generic (CC BY 2.0).",
+      "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).":"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)."
+    },
     alt: {
       "جامع القيروان التاريخي في تونس":"Historic Great Mosque of Kairouan in Tunisia",
       "مشهد بانورامي لجامع القيروان":"Panoramic view of the Great Mosque of Kairouan",
@@ -168,7 +192,7 @@
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   while (walker.nextNode()) textNodes.push({node:walker.currentNode, original:walker.currentNode.nodeValue});
   document.querySelectorAll("body *").forEach(el => {
-    ["placeholder","data-prompt","aria-label","alt"].forEach(attr => {
+    ["placeholder","data-prompt","aria-label","alt","data-name","data-caption","data-credit","data-license"].forEach(attr => {
       if (el.hasAttribute(attr)) attrNodes.push({el,attr,original:el.getAttribute(attr)});
     });
   });
