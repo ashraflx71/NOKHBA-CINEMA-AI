@@ -87,7 +87,41 @@
     "عجائب الحياة البرية":"Wildlife Wonders",
     "الأرض والفضاء والعلوم":"Earth, Space & Science",
     "كوكب الأرض كما تراه NASA":"Planet Earth as Seen by NASA",
-    "رسالة نخبة سينما:":"A Message from NOKHBA CINEMA:"
+    "رسالة نخبة سينما:":"A Message from NOKHBA CINEMA:",
+    "الأفلام":"Films",
+    "التراث الإسلامي":"Islamic Heritage",
+    "العمارة والفنون وشواهد الحضارة":"Architecture, arts, and traces of civilization",
+    "معرض التراث الإسلامي | NOKHBA CINEMA":"Islamic Heritage Gallery | NOKHBA CINEMA",
+    "جمال الحضارة":"The Beauty of",
+    "الإسلامية":"Islamic Civilization",
+    "نافذة معرفية على العمارة والفنون الهندسية، مع احترام حقوق المصورين وتوثيق مصادر الصور.":"A learning window into Islamic architecture and geometric arts, with photographer rights respected and image sources documented.",
+    "معالم وفنون من الذاكرة الحضارية":"Landmarks and Arts from a Shared Heritage",
+    "عدد الصور":"Number of images",
+    "تصفية المعرض":"Filter gallery",
+    "العمارة والمساجد":"Architecture and Mosques",
+    "الفنون والزخرفة":"Arts and Ornament",
+    "جامع القيروان":"Great Mosque of Kairouan",
+    "الجامع الكبير في القيروان، تونس.":"The Great Mosque in Kairouan, Tunisia.",
+    "من أبرز معالم العمارة الإسلامية في شمال أفريقيا.":"One of the most prominent landmarks of Islamic architecture in North Africa.",
+    "مشهد بانورامي لجامع القيروان":"Panoramic View of the Great Mosque of Kairouan",
+    "إطلالة بانورامية على جامع القيروان.":"A panoramic view of the Great Mosque of Kairouan.",
+    "nivea-cream (albina&kostya)":"nivea-cream (albina&kostya)",
+    "عمارة القيروان":"Kairouan Architecture",
+    "تفاصيل معمارية تحكي قرونًا من التاريخ.":"Architectural details that tell centuries of history.",
+    "زخارف هندسية إسلامية في فاس":"Islamic Geometric Patterns in Fez",
+    "زخارف هندسية على باب مدرسة بو عنانية في مدينة فاس المغربية.":"Geometric patterns on the door of Bou Inania Madrasa in Fez, Morocco.",
+    "فن الزخرفة الهندسية":"The Art of Geometric Ornament",
+    "تناغم الأشكال والنجوم في الفنون الإسلامية.":"The harmony of shapes and stars in Islamic art.",
+    "نقش هندسي إسلامي":"Islamic Geometric Pattern",
+    "نمط زخرفي هندسي مستلهم من الفن الإسلامي.":"A geometric ornamental pattern inspired by Islamic art.",
+    "جمال الهندسة":"The Beauty of Geometry",
+    "أنماط فنية تجمع الدقة والتناسق والإبداع.":"Artistic patterns combining precision, harmony, and creativity.",
+    "تُعرض الصور مع اسم صاحب العمل ورابط المصدر وشروط الترخيص. هذه مجموعة افتتاحية، وستضاف مواد أخرى بعد مراجعة كل مصدر على حدة.":"Images are displayed with creator attribution, source links, and license terms. This is an opening collection; more items will be added after each source is reviewed.",
+    "العلم · الفن · احترام الحقوق":"Knowledge · Art · Respect for Rights",
+    "عرض صورة جامع القيروان":"View the Great Mosque of Kairouan",
+    "عرض المشهد البانورامي لجامع القيروان":"View the panoramic mosque image",
+    "عرض الزخارف الهندسية الإسلامية":"View Islamic geometric patterns",
+    "عرض النقش الهندسي الإسلامي":"View the Islamic geometric pattern",
   };
   const attrMap = {
     placeholder: {
@@ -100,13 +134,44 @@
     },
     "aria-label": {
       "القائمة الرئيسية":"Main navigation",
+      "عرض صورة جامع القيروان":"View the Great Mosque of Kairouan",
+      "عرض المشهد البانورامي لجامع القيروان":"View the panoramic mosque image",
+      "عرض الزخارف الهندسية الإسلامية":"View Islamic geometric patterns",
+      "عرض النقش الهندسي الإسلامي":"View the Islamic geometric pattern",
       "تصفية المعرض":"Filter gallery",
       "أمثلة جاهزة":"Ready-made examples",
       "عارض الصور":"Image viewer",
       "إغلاق":"Close",
       "شعار نخبة":"NOKHBA logo"
     },
+    "data-name": {
+      "جامع القيروان":"Great Mosque of Kairouan",
+      "مشهد بانورامي لجامع القيروان":"Panoramic View of the Great Mosque of Kairouan",
+      "زخارف هندسية إسلامية في فاس":"Islamic Geometric Patterns in Fez",
+      "نقش هندسي إسلامي":"Islamic Geometric Pattern"
+    },
+    "data-caption": {
+      "الجامع الكبير في القيروان، تونس.":"The Great Mosque in Kairouan, Tunisia.",
+      "إطلالة بانورامية على جامع القيروان.":"A panoramic view of the Great Mosque of Kairouan.",
+      "زخارف هندسية على باب مدرسة بو عنانية في مدينة فاس المغربية.":"Geometric patterns on the door of Bou Inania Madrasa in Fez, Morocco.",
+      "نمط زخرفي هندسي مستلهم من الفن الإسلامي.":"A geometric ornamental pattern inspired by Islamic art."
+    },
+    "data-credit": {
+      "Cimoi":"Cimoi",
+      "nivea-cream (albina&kostya)":"nivea-cream (albina&kostya)",
+      "Tmahaffey3":"Tmahaffey3",
+      "Moelja":"Moelja"
+    },
+    "data-license": {
+      "Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) أو GNU FDL 1.2+؛ راجع صفحة المصدر.":"Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) or GNU FDL 1.2+; see the source page.",
+      "Creative Commons Attribution 2.0 Generic (CC BY 2.0).":"Creative Commons Attribution 2.0 Generic (CC BY 2.0).",
+      "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).":"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)."
+    },
     alt: {
+      "جامع القيروان التاريخي في تونس":"Historic Great Mosque of Kairouan in Tunisia",
+      "مشهد بانورامي لجامع القيروان":"Panoramic view of the Great Mosque of Kairouan",
+      "زخارف هندسية إسلامية على باب مدرسة تاريخية في فاس":"Islamic geometric patterns on a historic madrasa door in Fez",
+      "نقش هندسي إسلامي متكرر":"Repeating Islamic geometric pattern",
       "شعار نخبة":"NOKHBA logo",
       "شعار نخبة سينما":"NOKHBA CINEMA logo"
     }
@@ -114,6 +179,7 @@
   const titleMap = {
     "إنشاء فيديو بالنص | NOKHBA CINEMA":"Text-to-Video Studio | NOKHBA CINEMA",
     "معرض النجوم | NOKHBA CINEMA":"Star Gallery | NOKHBA CINEMA",
+    "معرض التراث الإسلامي | NOKHBA CINEMA":"Islamic Heritage Gallery | NOKHBA CINEMA",
     "عن نخبة سينما | NOKHBA CINEMA":"About NOKHBA CINEMA | NOKHBA CINEMA",
     "أفلام طويلة | NOKHBA CINEMA":"Feature Films | NOKHBA CINEMA",
     "الفيديوهات | NOKHBA CINEMA":"Videos | NOKHBA CINEMA",
@@ -126,7 +192,7 @@
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   while (walker.nextNode()) textNodes.push({node:walker.currentNode, original:walker.currentNode.nodeValue});
   document.querySelectorAll("body *").forEach(el => {
-    ["placeholder","data-prompt","aria-label","alt"].forEach(attr => {
+    ["placeholder","data-prompt","aria-label","alt","data-name","data-caption","data-credit","data-license"].forEach(attr => {
       if (el.hasAttribute(attr)) attrNodes.push({el,attr,original:el.getAttribute(attr)});
     });
   });
