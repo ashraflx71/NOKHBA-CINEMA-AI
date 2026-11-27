@@ -89,6 +89,8 @@
     "كوكب الأرض كما تراه NASA":"Planet Earth as Seen by NASA",
     "رسالة نخبة سينما:":"A Message from NOKHBA CINEMA:",
     "المعرض الإسلامي":"Islamic Gallery",
+    "معرض الحضارة الإسلامية":"Islamic Civilization Gallery",
+    "حكايات تُروى… وصور تبقى":"Stories are told… and images remain.",
     "ساهم معنا":"Support Us",
     "عالم المعرفة":"A World of Knowledge",
     "في حكاية وصورة":"Through Stories and Images",
