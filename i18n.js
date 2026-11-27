@@ -87,7 +87,7 @@
     "عجائب الحياة البرية":"Wildlife Wonders",
     "الأرض والفضاء والعلوم":"Earth, Space & Science",
     "كوكب الأرض كما تراه NASA":"Planet Earth as Seen by NASA",
-    "رسالة نخبة سينما:":"A Message from NOKHBA CINEMA:"
+    "رسالة نخبة سينما:":"A Message from NOKHBA CINEMA:",
     "الأفلام":"Films",
     "التراث الإسلامي":"Islamic Heritage",
     "معرض التراث الإسلامي | NOKHBA CINEMA":"Islamic Heritage Gallery | NOKHBA CINEMA",
