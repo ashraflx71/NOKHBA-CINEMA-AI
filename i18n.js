@@ -139,6 +139,10 @@
     },
     "aria-label": {
       "القائمة الرئيسية":"Main navigation",
+      "عرض صورة جامع القيروان":"View the Great Mosque of Kairouan",
+      "عرض المشهد البانورامي لجامع القيروان":"View the panoramic mosque image",
+      "عرض الزخارف الهندسية الإسلامية":"View Islamic geometric patterns",
+      "عرض النقش الهندسي الإسلامي":"View the Islamic geometric pattern",
       "تصفية المعرض":"Filter gallery",
       "أمثلة جاهزة":"Ready-made examples",
       "عارض الصور":"Image viewer",
@@ -146,6 +150,10 @@
       "شعار نخبة":"NOKHBA logo"
     },
     alt: {
+      "جامع القيروان التاريخي في تونس":"Historic Great Mosque of Kairouan in Tunisia",
+      "مشهد بانورامي لجامع القيروان":"Panoramic view of the Great Mosque of Kairouan",
+      "زخارف هندسية إسلامية على باب مدرسة تاريخية في فاس":"Islamic geometric patterns on a historic madrasa door in Fez",
+      "نقش هندسي إسلامي متكرر":"Repeating Islamic geometric pattern",
       "شعار نخبة":"NOKHBA logo",
       "شعار نخبة سينما":"NOKHBA CINEMA logo"
     }
