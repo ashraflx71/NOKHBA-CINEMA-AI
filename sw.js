@@ -1,7 +1,7 @@
 "use strict";
 
 const CACHE_PREFIX = "nokhba-cinema";
-const CACHE_VERSION = "v1.0.2";
+const CACHE_VERSION = "v1.0.3";
 const STATIC_CACHE = `${CACHE_PREFIX}-static-${CACHE_VERSION}`;
 const PAGE_CACHE = `${CACHE_PREFIX}-pages-${CACHE_VERSION}`;
 
@@ -10,6 +10,7 @@ const APP_SHELL = [
   "./index.html",
   "./about.html",
   "./gallery.html",
+  "./islamic-heritage.html",
   "./movies.html",
   "./videos.html",
   "./create-video.html",
